@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+</head>
+
+<body>
+  <h1>{{title}}</h1> <!-- Dynamic title -->
+
+  <form action="{{loginAction}}" method="POST">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="{{usernamePlaceholder}}" required />
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="{{passwordPlaceholder}}" required />
+    </div>
+
+    <button type="submit">{{submitButtonText}}</button>
+  </form>
+</body>
+
+</html>
